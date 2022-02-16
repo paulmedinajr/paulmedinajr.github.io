@@ -1,0 +1,21 @@
+.body {
+  padding-top: 40px;
+}
+
+.body .banner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.body .banner .row {
+  align-items: center;
+  margin-left: -200px;
+  display: flex;
+}
+
+.body .banner .row img {
+  display: inline-block;
+  height: 300px;
+  margin: 10px;
+}
