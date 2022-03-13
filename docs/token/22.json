@@ -1,0 +1,47 @@
+{
+  "name": "Good Riddance (Back Cover)",
+  "description": "...Or did I? I still do political cartoons occasionally. Before I was let go from The Philippine Star, I made editorial cartoons for their tabloid PM (Pang-Masa.)",
+  "image": "https://ipfs.io/ipfs/bafybeibve7lugg7oakds5v6qruhxpe4r4gu72ouj3grrfgajimjyd4jv54",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeicrqn7ou723bgnx3ncvhuzmb7r4cde62rcvfw3r6x5dutcd5boaxu",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Ink and POLitics 3 (back)"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 70"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Editorial Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1999"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Landscape"
+    }
+  ]
+}

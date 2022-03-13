@@ -1,0 +1,47 @@
+{
+  "name": "The National Fruit",
+  "description": "The first book published by a conventional company--New Day Publishers. I titled it, \"The Best of Pugad Baboy\" as I was unsure if the comics would catch on with mainstream comic book readers.",
+  "image": "https://ipfs.io/ipfs/bafybeigitdc2vsyvq2ghocoybybrcv2vkz5ge3353n2rucbppmau6ycbwm",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeihgtdu3zjfkicpobonaxjhneujnj26vvgsj6qcwrc3ban7c4muasy",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Book 2"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 50"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1989"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Portrait"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "name": "PMJr Autograph",
+  "description": "Pol Medina Jr.'s autograph --- immortalized.",
+  "image": "https://ipfs.io/ipfs/bafybeickexjouubayylo7sjybwvgu6aatcsakvknil4pk2s4dybcfdbmfu",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Special",
+      "value": "PMJr Special"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 1109"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Impromptu Hand-Drawn"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Ink Marker"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "2021"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Black & White"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Square"
+    }
+  ]
+}

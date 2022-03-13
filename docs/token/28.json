@@ -1,0 +1,47 @@
+{
+  "name": "The Girl from Persia ",
+  "description": "Kules meets an enigmatic Iranian that happens to be an ex-operative who wants out. (Pugad Baboy Book 28)",
+  "image": "https://ipfs.io/ipfs/bafybeias65vpegoxmbmfzy7tgife2yvzdop2wvdkntnj2vivpryldelzbe",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeici33fy7wvd2w23a23cclu3bb2d7oireoma3wejzacdyypvru4gpu",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "1:1"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 1"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Mythic"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Story Arc in Comic Book"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "2005"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Portrait"
+    }
+  ]
+}

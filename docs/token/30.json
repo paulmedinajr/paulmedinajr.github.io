@@ -1,0 +1,47 @@
+{
+  "name": "The Grim Rocker",
+  "description": "I dreamt about the reaper when I became prediabetic (type 2). I painted him exactly as I saw him posed--like playing a guitar solo with his scythe. After I finished this, I went on a program of intermittent fasting and a low-to-no-carb diet. I am now diabetes-free. Whenever I get lazy from exercising, I look at this painting...",
+  "image": "https://ipfs.io/ipfs/bafybeiex6m4mox2bphzwhxz6bkacunomzflfhyakausekemcsdsltf2rgq",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeiadz4p7jqx4hk2cuge7hb26jsij6zyzkeqwvzj6uj7pvfj64j37u4",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "1:1"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 1"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Immortal"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Oil Painting"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Oil on Fiberboard"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "2015"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Portrait"
+    }
+  ]
+}

@@ -51,6 +51,10 @@ li {
   margin-bottom: 10px;
 }
 
+.hidden {
+  display: none;
+}
+
 .text-success {
   color: #06a700
 }
@@ -184,6 +188,80 @@ li {
   margin: auto;
   max-width: 1000px;
   padding-top: 40px;
+}
+
+.notification {
+  border: 1px solid #222222;
+  bottom: 20px;
+  color: #FFFFFF;
+  font-size: 12px;
+  left: 20px;
+  max-width: 375px;
+  padding: 20px 30px;
+  position: fixed;
+  z-index: 10000;
+}
+
+.notification a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+.notification::before {
+  display: inline-block;
+  font-family: "Font Awesome 5 Free"; font-weight: 900;
+  padding-right: 10px;
+}
+
+.notification.notification-error {
+  background-color: #880000;
+}
+
+.notification.notification-error::before {
+  content: "\f057";
+}
+
+.notification.notification-success {
+  background-color: #008800;
+}
+
+.notification.notification-success::before {
+  content: "\f058";
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 16px;
+}
+
+.btn-solid,
+.btn-solid:hover {
+  color: #FFFFFF;
+}
+
+.btn-outline {
+  border-style: solid;
+  border-width: 1px;
+}
+
+.btn-solid.btn-success {
+  background-color: #008800;
+}
+
+.btn-outline.btn-success,
+.btn-outline.btn-success:hover {
+  border-color: #008800;
+  color: #008800;
+}
+
+.btn-solid.btn-danger {
+  background-color: #EC131D;
+}
+
+.btn-outline.btn-danger,
+.btn-outline.btn-danger:hover {
+  border-color: #EC131D;
+  color: #EC131D;
 }
 
 @media(max-width: 767px) {

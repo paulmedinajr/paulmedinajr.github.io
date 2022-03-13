@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     
-    <title>NFT Auction - Paul Medina Jr</title>
-    <meta property="og:title" content="Paul Medina Jr - Kartunero since 1988" />
+    <title>The Legacy of Paul Medina Jr.</title>
+    <meta property="og:title" content="The Legacy of Paul Medina Jr." />
     <meta property="og:image" content="https://www.paulmedinajr.com/images/banner/banner-paul-medina-jr.jpg" />
     <meta property="og:url" content="https://www.paulmedinajr.com/" />
     <meta property="og:type" content="website" />
@@ -24,13 +24,13 @@
     <link rel="stylesheet" type="text/css" href="/fonts/opensans/font.css" />
     <link rel="stylesheet" type="text/css" href="/fonts/fontawesome/css/all.min.css" />
     <link rel="stylesheet" type="text/css" href="/styles/theme.css?" />
-    <link rel="stylesheet" type="text/css" href="/styles/auction.css?" />
+    <link rel="stylesheet" type="text/css" href="/styles/legacy.css?" />
   </head>
   <body>
     <header class="head">
       <aside class="left">
         <a class="logo" href="/">
-          <img src="/images/logo-pmd-square.png" />
+          <img src="https://ipfs.io/ipfs/bafybeihtyfzjyguxnc5bt3hzyyspguetplyegk3b7shmz537ul3j7rj65i" />
         </a>
         <div class="social">
           <a href="https://www.facebook.com/KulasasForPolMedina/" target="_blank">
@@ -43,26 +43,50 @@
             <i class="fab fa-instagram"></i>
           </a>
         </div>
-        <div class="name">Paul Medina Jr.</div>
+        <div class="name">Pol Medina Jr.</div>
         <nav>
-          <a href="#news">News</a>
-          <a href="https://en.wikipedia.org/wiki/Pol_Medina_Jr." target="_blank">About</a>
-          <a href="/auction.html">NFT Auction</a>
+          <a href="https://en.wikipedia.org/wiki/Pol_Medina_Jr." target="_blank">Since 1986</a>
+          <a href="/legacy.html">The Legacy</a>
         </nav>
       </aside>
       <aside class="right">
         <nav>
-          <a href="/pugad-baboy.html">Pugad Baboy</a>
-          <a href="/pirata.html">Pirata</a>
-          <a href="/blood-of-the-shinobi.html">Blood of the Shinobi</a>
         </nav>
       </aside>
     </header>
     <main class="body">
-      <h1>NFT Auction</h1>
-      <div class="items">
-        
+      <section id="disconnected">
+        <a 
+          class="cta-connect btn btn-solid btn-success"
+          data-do="connect" 
+          data-on="click"
+          href="javascript:void(0)"
+        >Connect Your Wallet</a>
+      </section>
+      <section id="connected" class="hidden">
+        <span id="wallet-address"></span>
+        <a 
+          data-do="disconnect" 
+          data-on="click"
+          href="javascript:void(0)"
+        >(disconnect)</a>
+      </section>
+      <h1>The Legacy</h1>
+      <div id="collections">
       </div>
+      <template id="template-collection">
+        <div class="preview">
+          <img src="{IMAGE}" />
+        </div>
+        <h3>{TITLE}</h3>
+        <span class="supply">{REMAINING} of {MAXSUPPLY}</span>
+        <a 
+          class="btn btn-solid btn-success"
+          data-do="buy" 
+          data-on="click"
+          href="javascript:void(0)"
+        >Buy Now</a>
+      </template>
       <section id="news" class="media">
         <h3>1,000,000 pinoys can't be wrong.</h3>
         <a href="https://www.manilatimes.net/2020/04/04/opinion/columnists/the-death-and-resurrection-of-pinoy-komiks/709345">
@@ -83,5 +107,10 @@
       </section>
     </main>
     <footer class="foot"></footer>
+    <script src="//cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script type="text/javascript" src="/scripts/lib/doon.js"></script>
+    <script type="text/javascript" src="/scripts/lib/blockapi.js"></script>
+    <script type="text/javascript" src="/scripts/contracts-testnet.js"></script>
+    <script type="text/javascript" src="/scripts/legacy.js"></script>
   </body>
 </html>

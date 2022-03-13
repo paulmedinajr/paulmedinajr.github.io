@@ -1,0 +1,47 @@
+{
+  "name": "Oilfie",
+  "description": "This is an inception movie-inspired piece. When I first started painting with oils, my painting tutor told me to do landscapes, then still-lifes and eventually graduate to doing portraits. I started with portraits of me and my family. I'm an anarchist that way.",
+  "image": "https://ipfs.io/ipfs/bafybeibdiz7vzmarjmjjkw5ceuf2iqgkl25k5z55woowckzsmy42e3jjwm",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeie22jgwsbawnedtqyrhegoavfo6igvo7pda5vatefelavp3q5roz4",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "1:1"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 1"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Self Portrait Painting"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Oil on Canvas"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "2015"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Square"
+    }
+  ]
+}

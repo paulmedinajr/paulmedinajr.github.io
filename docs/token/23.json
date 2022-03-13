@@ -1,0 +1,47 @@
+{
+  "name": "Heroes Without Superpowers",
+  "description": "Babman -The Pork Knight and Judge Tickolas Marshal band together to fight a white slavery ring in \"The Olongapo Caper!\"",
+  "image": "https://ipfs.io/ipfs/bafybeif7qsbj7k5n2celfrjkhrmrs5invanypj5tcr4o6j4qtmivnwgiim",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeifspzvgnvkh4nhh6tupbwyxjtldu3n4lk336o4cwzbj2p4zxamsii",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "1:1"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 1"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Legendary"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Story Arc in Comic Book"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1993"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Portrait"
+    }
+  ]
+}
