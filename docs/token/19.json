@@ -1,0 +1,47 @@
+{
+  "name": "The Philippine Presidents' Plot",
+  "description": "I imagined being given death threats for my parodies of all the presidents after Marcos. I received none from any of them. Editorial cartoons are taken less seriously than columnists' opinion pieces.",
+  "image": "https://ipfs.io/ipfs/bafybeig4mhwjuolfn76cn6sizyhf7n5sss6ihnyvjw6bnexaal7kixrova",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeiac2lkou2bytqdkuhe25hurqlanpqy7gowd2iavmz7u3blr2qqc5y",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Ink and POLitics 1"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 70"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Editorial Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1995"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Landscape"
+    }
+  ]
+}

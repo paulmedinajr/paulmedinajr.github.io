@@ -1,0 +1,47 @@
+{
+  "name": "Triskaidekaphobia",
+  "description": "The group exhibits irrational fear of popular Filipino superstitions. The cover has a cameo of the Phillipine's then-President Erap and Jason Vorhees.",
+  "image": "https://ipfs.io/ipfs/bafybeiacmhyqugbpspysoggpllqlx4druwepqtepcgtojuny64dcyltqiy",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeidqpygvhvglpbuehmfpxnx3me7rxfh5xmfgxilmjzm6xtabl3q6uu",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Book 13 (front)"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 50"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1998"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Portrait"
+    }
+  ]
+}

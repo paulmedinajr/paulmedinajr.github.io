@@ -1,0 +1,47 @@
+{
+  "name": "Trip to Dueñas",
+  "description": "This cover features The Pugad Baboy group facing off with Supernatural beings including ones featured in the Stone and Trese comic books. I had Books 4 to 8 published by Anvil Publishing Inc.--National Bookstore's publishing arm.",
+  "image": "https://ipfs.io/ipfs/bafybeidac3l2bwzxtg4us5josjuqtyzqlfievvpbspjljgiaocnh5qbaa4",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeiewmq6abgkht5ryr2tqvgsmgpphpzszw2hudy3i4thgbkyioyqxdi",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Book 4"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 40"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Rare"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1991"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Portrait"
+    }
+  ]
+}

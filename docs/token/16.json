@@ -1,0 +1,47 @@
+{
+  "name": "Ballroom Mania",
+  "description": "Dancing became a recreational form of exercise. There's Zumba, Hustle, Salsa, Merengue, Cha-cha, Rumba, African dance workout, Bollywood, and more will be invented as we tire of the last one.",
+  "image": "https://ipfs.io/ipfs/bafybeie5uqver2wi6poiirmltk4g3oztojm24ovmakyaxpf26xov6dougq",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeibbtfordovidw2yg7doztftb7zaroe2zoexk65f2lprprwiczaobq",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Book 16"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 50"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "2003"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Landscape"
+    }
+  ]
+}

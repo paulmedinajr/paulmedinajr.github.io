@@ -1,0 +1,47 @@
+{
+  "name": "Good Riddance",
+  "description": "The shortest to the tallest persons I parodied expresses delight at Polgas' passing. I was fired from making editorial cartoons in the Phililippine Daily Inquirer so I titled this \"The Final Issue.\" In it, I metaphorically died...",
+  "image": "https://ipfs.io/ipfs/bafybeidg7cmtd34iknfcumzfkq7ggendry2qzhfmocrzg2ehsmbmkdt2le",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeiblpzru3kk3mwok7wdroa53i3dvoce4wrrkbl73pjzzh25d7q6pi4",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Ink and POLitics 3 (front)"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 50"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Editorial Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1999"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Landscape"
+    }
+  ]
+}

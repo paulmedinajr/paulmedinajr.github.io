@@ -1,0 +1,47 @@
+{
+  "name": "Dark Dobermaxx",
+  "description": "I painted this Dobermaxx portrait in oil together with \"The Grim Rocker\" when I was diagnosed with hypertension and high cholesterol. This was the same expression I made when my cardiologist put me on an expensive program on meds.",
+  "image": "https://ipfs.io/ipfs/bafybeida5axghhcy4kbujrezv2puucrmlybnjrtztv23lpxuuhbtzoebfq",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeifny4meo6uoeedidddkpdo7u7oyl7jvauihl7y5uy2ys7iiqkuoje",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "1:1"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 1"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Mythic"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Oil Painting"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Oil on Fiberboard"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "2015"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Portrait"
+    }
+  ]
+}

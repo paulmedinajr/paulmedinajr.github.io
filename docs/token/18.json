@@ -1,0 +1,47 @@
+{
+  "name": "Olympig Games",
+  "description": "Sipa, Syato, Chinese garter, Tumbang preso, Patintero...just a few of the street games in the Phiilippines that we played before video games took the physicality out of fun.",
+  "image": "https://ipfs.io/ipfs/bafybeibvat4paly3sigimiudrwroflzxzopyibfsavl4ofgekq2r5xgi2e",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeidjsv47waaui43dtsev4mr3rbes7tkh7qq64bf4aqjvrx72sjglwy",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Book 18"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 70"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Common"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "2004"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Landscape"
+    }
+  ]
+}
