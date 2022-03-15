@@ -55,37 +55,81 @@
       </aside>
     </header>
     <main class="body">
+      <p>
+        Pol Medina Jr., popularly known as the author of Pugad Baboy 
+        Comics, immortalized his physical art pieces throughout his 
+        career in this one-of-a-kind NFT Collection.
+      </p>
+      <nav class="proof">
+        <a href="#">
+          <img src="/images/logo-opensea.png" />
+          <span>
+            <small>View On</small>
+            <strong>OpenSea</strong>
+          </span>
+        </a>
+        <a href="#">
+          <img src="/images/logo-ethereum.png" />
+          <span>
+            <small>View On</small>
+            <strong>Etherscan</strong>
+          </span>
+        </a>
+        <a href="#">
+          <img src="/images/logo-github.png" />
+          <span>
+            <small>Contracts On</small>
+            <strong>Github</strong>
+          </span>
+        </a>
+      </nav>
       <section id="disconnected">
         <a 
-          class="cta-connect btn btn-solid btn-success"
+          class="btn btn-outline btn-primary"
           data-do="connect" 
           data-on="click"
           href="javascript:void(0)"
         >Connect Your Wallet</a>
       </section>
       <section id="connected" class="hidden">
-        <span id="wallet-address"></span>
         <a 
+          class="btn btn-outline btn-primary"
           data-do="disconnect" 
           data-on="click"
           href="javascript:void(0)"
-        >(disconnect)</a>
+        >
+          <span id="wallet-address"></span>
+          (disconnect)
+        </a>
       </section>
       <h1>The Legacy</h1>
+      <p>
+        Created for true fans. In order to own these unique NFTs you 
+        must be <a href="/get-whitelisted.html">whitelisted</a> first.
+      </p>
       <div id="collections">
       </div>
       <template id="template-collection">
         <div class="preview">
           <img src="{IMAGE}" />
         </div>
-        <h3>{TITLE}</h3>
-        <span class="supply">{REMAINING} of {MAXSUPPLY}</span>
-        <a 
-          class="btn btn-solid btn-success"
-          data-do="buy" 
-          data-on="click"
-          href="javascript:void(0)"
-        >Buy Now</a>
+        <div class="info">
+          <h3>#{ID} {TITLE}</h3>
+          <p>{DESCRIPTION}</p>
+          <div class="stats">
+            <span class="price">Ξ {PRICE}</span>
+            <span class="supply">{REMAINING} of {MAXSUPPLY}</span>
+          </div>
+          <a 
+            class="btn btn-outline btn-primary"
+            data-id="{ID}"
+            data-title="{TITLE}"
+            data-price="{PRICE}"
+            data-do="buy" 
+            data-on="click"
+            href="javascript:void(0)"
+          >Buy Now</a>
+        </div>
       </template>
       <section id="news" class="media">
         <h3>1,000,000 pinoys can't be wrong.</h3>
