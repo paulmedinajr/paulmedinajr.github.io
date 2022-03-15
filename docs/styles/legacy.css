@@ -27,6 +27,10 @@ h1 {
   margin: 0 10px;
 }
 
+.body .proof span {
+  text-align: left;
+}
+
 .body .proof img {
   margin-right: 10px;
   width: 50px;
@@ -36,9 +40,14 @@ h1 {
   display: block;
 }
 
-#connected, #disconnected {
-  margin-top: 4px;
+#disconnected .btn-primary {
+  display: block;
+  text-align: center;
+}
+
+#connected > .btn-primary {
   float: right;
+  margin-top: -5px;
 }
 
 #collections {
@@ -104,12 +113,12 @@ h1 {
     padding-left: 0;
   }
 
-  #connected, #disconnected {
-    margin: 4px 0 40px;
+  #connected > .btn-primary, #disconnected > .btn-primary {
     float: none;
+    margin-bottom: 40px;
   }
 
-  #connected .btn-primary, #disconnected .btn-primary {
+  #connected > .btn-primary, #disconnected > .btn-primary {
     display: block;
     text-align: center;
   }

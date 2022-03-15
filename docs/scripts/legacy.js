@@ -1,6 +1,8 @@
 (async() => {
   const state = {}
   const contract = blockapi.contract('legacy')
+  const collections = document.getElementById('collections')
+  const template = document.getElementById('template-collection')
   //connected state
   const connected = async function(newstate) {
     Object.assign(state, newstate, {})
@@ -13,6 +15,36 @@
       newstate.account.substr(0, 6),
       newstate.account.substr(newstate.account.length - 4)
     ].join('...')
+
+    //load collection
+    collections.innerHTML = '';
+    for (let token, i = 0; i < 4; i++) {
+      token = null
+      try {
+        token = await blockapi.read(contract, 'tokenInfo', i + 1)
+      } catch(e) {}
+      
+      if (!token?.price) break;
+      const response = await fetch(`/data/token/${i + 1}.json`)
+      const metadata = await response.json()
+
+      const item = document.createElement('div')
+      item.classList.add('collection')
+      item.innerHTML = template.innerHTML
+        .replace('{ID}', i + 1)
+        .replace('{IMAGE}', metadata.image)
+        .replace('{TITLE}', metadata.name)
+        .replace('{DESCRIPTION}', metadata.description)
+        .replace('{PRICE}', blockapi.toEther(token.price, 'string'))
+        .replace('{MAXSUPPLY}', token.max)
+        .replace('{REMAINING}', token.remaining)
+        .replace('{ID}', i + 1)
+        .replace('{TITLE}', metadata.name)
+        .replace('{PRICE}', token.price)
+
+      collections.appendChild(item)
+      window.doon(item)
+    }
   }
   //disconnected state
   const disconnected = function(e) {
@@ -48,8 +80,7 @@
 
       blockapi.notify(
         'info', 
-        `Please confirm purchase of ${blockapi.toEther(price, 'string')} ethers ...`,
-        1000000
+        `Please confirm purchase of ${blockapi.toEther(price, 'string')} ethers ...`
       )
 
       let rpc;
@@ -101,7 +132,11 @@
         )
       })
 
-      await rpc 
+      try {
+        await rpc
+      } catch(e) {
+        blockapi.notify('error', e.message)
+      }
     }
   
     if (!state.account) {
@@ -118,34 +153,5 @@
   const response = await fetch(`/data/whitelist.json`)
   const whitelist = await response.json()
   
-  //load collection
-  const collections = document.getElementById('collections')
-  const template = document.getElementById('template-collection')
-  for (let token, i = 0; i < 4; i++) {
-    token = null
-    try {
-      token = await blockapi.read(contract, 'tokenInfo', i + 1)
-    } catch(e) {}
-    
-    if (!token?.price) break;
-    const response = await fetch(`/data/token/${i + 1}.json`)
-    const metadata = await response.json()
-
-    const item = document.createElement('div')
-    item.classList.add('collection')
-    item.innerHTML = template.innerHTML
-      .replace('{ID}', i + 1)
-      .replace('{IMAGE}', metadata.image)
-      .replace('{TITLE}', metadata.name)
-      .replace('{DESCRIPTION}', metadata.description)
-      .replace('{PRICE}', blockapi.toEther(token.price, 'string'))
-      .replace('{MAXSUPPLY}', token.max)
-      .replace('{REMAINING}', token.remaining)
-      .replace('{ID}', i + 1)
-      .replace('{TITLE}', metadata.name)
-      .replace('{PRICE}', token.price)
-
-    collections.appendChild(item)
-    window.doon(item)
-  }
+  
 })()
