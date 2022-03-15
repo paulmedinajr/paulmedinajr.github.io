@@ -1,7 +1,7 @@
 window.blockmetadata = {
   "chain_id": 1,
   "chain_name": "Ethereum Mainnet",
-  "chain_scan": "https://mainnet.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+  "chain_scan": "https://etherscan.io",
   "contracts": {
     "legacy": {
       "address": "",

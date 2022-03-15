@@ -7,6 +7,7 @@ import "@openzeppelin/contracts/security/ReentrancyGuard.sol";
 
 import "@openzeppelin/contracts/utils/Strings.sol";
 import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 
 import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Burnable.sol";
 import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Pausable.sol";
@@ -24,6 +25,8 @@ contract LegacyOfPolMedinaJr is
   ERC1155Pausable,
   ERC1155Supply
 {
+  using Strings for uint256;
+
   // ============ Constants ============
 
   //royalty percent
@@ -160,14 +163,40 @@ contract LegacyOfPolMedinaJr is
     );
   }
 
+  /**
+   * @dev See {IERC1155MetadataURI-uri}.
+   *
+   * This implementation returns the same URI for *all* token types. It relies
+   * on the token type ID substitution mechanism
+   * https://eips.ethereum.org/EIPS/eip-1155#metadata[defined in the EIP].
+   *
+   * Clients calling this function must replace the `\{id\}` substring with the
+   * actual token type ID.
+   */
+  function uri(uint256 id) public view virtual override returns(string memory) {
+    if (exists(id)) {
+      return string(abi.encodePacked(super.uri(id), "/", id.toString(), ".json"));
+    }
+    
+    return string(abi.encodePacked(super.uri(id), "/{id}.json"));
+  }
+
   // ============ Write Methods ============
 
   /**
    * @dev Allows anyone to mint by purchasing
    */
-  function buy(address to, uint256 id, uint256 quantity) 
+  function buy(address to, uint256 id, uint256 quantity, bytes memory proof) 
     external payable nonReentrant 
   {
+    //make sure the minter signed this off
+    if (ECDSA.recover(
+      ECDSA.toEthSignedMessageHash(
+        keccak256(abi.encodePacked("authorized", to))
+      ),
+      proof
+    ) != owner()) revert InvalidMint();
+  
     //get price
     uint256 price = mintPrice(id) * quantity;
     //if there is a price and the amount sent is less than

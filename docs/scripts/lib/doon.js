@@ -1,7 +1,5 @@
 window.doon = function(selector) {
-  Array.from(
-    document.querySelectorAll(selector)
-  ).forEach(function(container) {
+  function _doon(container) {
     Array.from(
       container.querySelectorAll('*[data-do]')
     ).forEach(function(origin) {
@@ -46,5 +44,12 @@ window.doon = function(selector) {
         });
       });
     });
-  });
+  }
+
+  if (typeof selector === 'string') {
+    selector = document.querySelectorAll(selector)
+  } else if (!Array.isArray(selector)) {
+    selector = [selector]
+  }
+  Array.from(selector).forEach(_doon);
 }

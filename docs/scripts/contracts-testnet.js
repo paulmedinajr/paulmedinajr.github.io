@@ -1,7 +1,7 @@
 window.blockmetadata = {
   "chain_id": 4,
   "chain_name": "Ethereum Rinkeby Testnet",
-  "chain_scan": "https://rinkeby.infura.io/v3/9aa3d95b3bc440fa88ea12eaa4456161",
+  "chain_scan": "https://rinkeby.etherscan.io",
   "contracts": {
     "legacy": {
       "address": "0xD1aE2c8c2714099E110F33789899Db603E823407",

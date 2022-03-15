@@ -5,17 +5,27 @@ window.blockapi = {
 
   async write(contract, account, method, value, ...args) {
     const params = {
-      to: contracts.address,
+      to: contract.address,
       from: account,
       data: contract.methods[method](...args).encodeABI(),
     }
     
-    if (value) params.value = String(value)
+    if (value) params.value = String(this.web3().utils.toHex(value))
     
     return await window.ethereum.request({
       method: 'eth_sendTransaction',
       params: [params]
     })
+  },
+
+  send(contract, account, method, value, ...args) {
+    const params = {
+      to: contract.address,
+      from: account
+    }
+    if (value) params.value = String(this.web3().utils.toHex(value))
+    const rpc = contract.methods[method](...args)
+    return rpc.send(params)
   },
 
   toEther(num, format) {
@@ -30,7 +40,7 @@ window.blockapi = {
     return web3.utils.fromWei(String(num))
   },
 
-  toWei(web3, num) {
+  toWei(num) {
     return this.web3().utils.toWei(String(num)).toString()
   },
 
