@@ -1,0 +1,47 @@
+{
+  "name": "Outdoor Pizza",
+  "description": "The sungcals use an outdoor wood-fired brick oven to make their favorite mid-afternoon snack--pizza!",
+  "image": "https://ipfs.io/ipfs/bafkreiepvvslwioljvu2vrprjz55luyo7mhxpqgqebohnehcsqgg3i3oy4",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeidvtaudewbvfm5b4hmgk3k3nmpyzut3ahxnbao4tmpeqrbuvajhvy",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "1:1"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 1"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Immortal"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Characters"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Oil on Canvas"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "2015"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Landscape"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "name": "Inuman: The Pinoy Favorite Before Social Media",
+  "description": "Pinoy's need no excuse to drink. We got together in someone's backyard before posting on a friend's wall became a thing.",
+  "image": "https://ipfs.io/ipfs/bafkreifkvtdn5h2m6uwalih2xdiotta2hejeq4di5n3b34nstjqkrzy5im",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeidl6lsspe7yioyuemppr52n4kzwu3rbniqzmymvoik5ikadmxiigq",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Book 6"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 50"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1993"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Portrait"
+    }
+  ]
+}

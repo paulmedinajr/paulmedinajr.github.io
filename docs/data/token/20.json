@@ -1,0 +1,47 @@
+{
+  "name": "Dog Stew",
+  "description": "I caricatured every personality in the news--from politics to religious leaders to foreign dictators.",
+  "image": "https://ipfs.io/ipfs/bafkreialzf2exr37pmniqpzqhxvhb7lhdvuz3yeyxm3atqci7rql7leqji",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeic7phsa7lynkqlyn7r3gfnyzx26keu6jzmsiq3njm55ab25pl4w6q",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Ink and POLitics 2"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 50"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Editorial Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1997"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Landscape"
+    }
+  ]
+}

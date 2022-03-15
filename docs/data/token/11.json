@@ -1,0 +1,47 @@
+{
+  "name": "Hitting The Gym",
+  "description": "The gang engages in their least favorite activity--exercising. The Idea came to me when I was deep into my third martial art. I would hang out in the gym and watch other people do their thing. I saw one patron doing Zumba only on Wednesdays and Fridays--when the instructor is not a dude.",
+  "image": "https://ipfs.io/ipfs/bafkreicsl2conbrfwiqqc22n2tavukvko3wo53dt6oxzgzxqzmdvdrzeze",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeibjm3did4izcbthyapug6ijtx2xtntnvgkyv3y4xyi4vvxci6u3he",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Book 12"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 50"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1996"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Square"
+    }
+  ]
+}
