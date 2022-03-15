@@ -1,6 +1,7 @@
 (async() => {
   const state = {}
   const contract = blockapi.contract('legacy')
+  //connected state
   const connected = async function(newstate) {
     Object.assign(state, newstate, {})
     blockapi.notify('success', 'Wallet connected')
@@ -13,7 +14,7 @@
       newstate.account.substr(newstate.account.length - 4)
     ].join('...')
   }
-
+  //disconnected state
   const disconnected = function(e) {
     if (e?.message) {
       blockapi.notify('error', e.message)
@@ -26,12 +27,21 @@
   }
 
   window.doon('body')
+  //on disconnect
   window.addEventListener('disconnect-click', disconnected)
+  //on connect
   window.addEventListener('connect-click', async(e) => {
     blockapi.connect(blockmetadata, connected, disconnected)
   })
+  //on buy
   window.addEventListener('buy-click', async (e) => {
     async function buy() {
+      if (!whitelist[state.account.toLowerCase()]) {
+        console.log(state.account.toLowerCase(), whitelist)
+        return blockapi.notify('error', 'Wallet is not whitelisted')
+      }
+
+      const proof = whitelist[state.account.toLowerCase()]
       const id = e.for.getAttribute('data-id')
       const price = e.for.getAttribute('data-price')
       const title = e.for.getAttribute('data-title')
@@ -47,12 +57,13 @@
         rpc = blockapi.send(
           contract, 
           state.account, 
-          'buy(address,uint256,uint256)', 
+          'buy(address,uint256,uint256,bytes)', 
           price, //value
           //args
           state.account, 
           parseInt(id), 
-          1
+          1,
+          proof
         )
       } catch(e) {
         blockapi.notify('error', e.message)
@@ -102,17 +113,22 @@
       await buy()
     }
   })
+
+  //load whitelist
+  const response = await fetch(`/data/whitelist.json`)
+  const whitelist = await response.json()
   
+  //load collection
   const collections = document.getElementById('collections')
   const template = document.getElementById('template-collection')
-  for (let token, i = 0; i < 2; i++) {
+  for (let token, i = 0; i < 4; i++) {
     token = null
     try {
       token = await blockapi.read(contract, 'tokenInfo', i + 1)
     } catch(e) {}
     
     if (!token?.price) break;
-    const response = await fetch(`/token/${i + 1}.json`)
+    const response = await fetch(`/data/token/${i + 1}.json`)
     const metadata = await response.json()
 
     const item = document.createElement('div')

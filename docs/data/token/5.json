@@ -1,0 +1,47 @@
+{
+  "name": "Wisedog Teams Up with Dobermaxx",
+  "description": "When the Pugad Baboy group time-travelled to 2078, Polgas met his future version to fight his arch enemy's future version.",
+  "image": "https://ipfs.io/ipfs/bafkreid6qzxqgpvjb233j3urpwurfb6pjxmivryuqhozojjiuha7a5gkya",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeifkpjobyvgq3zda5kv4m34pzfnroxlhknz4gvky2igxcrosyphtky",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Book 5"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 50"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1992"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Portrait"
+    }
+  ]
+}

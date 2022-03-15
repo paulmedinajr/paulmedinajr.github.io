@@ -4,7 +4,7 @@ window.blockmetadata = {
   "chain_scan": "https://rinkeby.etherscan.io",
   "contracts": {
     "legacy": {
-      "address": "0xD1aE2c8c2714099E110F33789899Db603E823407",
+      "address": "0xE9F7715e9063D3DbC3aBd5C3C1dC095Bd18533c6",
       "abi": [
         {
           "inputs": [
@@ -364,6 +364,11 @@ window.blockmetadata = {
               "internalType": "uint256",
               "name": "quantity",
               "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "proof",
+              "type": "bytes"
             }
           ],
           "name": "buy",
@@ -776,7 +781,7 @@ window.blockmetadata = {
           "inputs": [
             {
               "internalType": "uint256",
-              "name": "",
+              "name": "id",
               "type": "uint256"
             }
           ],

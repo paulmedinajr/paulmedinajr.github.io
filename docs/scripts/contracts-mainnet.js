@@ -364,6 +364,11 @@ window.blockmetadata = {
               "internalType": "uint256",
               "name": "quantity",
               "type": "uint256"
+            },
+            {
+              "internalType": "bytes",
+              "name": "proof",
+              "type": "bytes"
             }
           ],
           "name": "buy",
@@ -776,7 +781,7 @@ window.blockmetadata = {
           "inputs": [
             {
               "internalType": "uint256",
-              "name": "",
+              "name": "id",
               "type": "uint256"
             }
           ],

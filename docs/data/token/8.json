@@ -1,0 +1,47 @@
+{
+  "name": "Bayanihan: A Filipino Virtue",
+  "description": "Filipinos are not just known to be hospitable, we are also famous for our spirit of cooperation.",
+  "image": "https://ipfs.io/ipfs/bafkreifoa754cnttb5spawbq2pwfskjhqwrvv7otc5lrq32qxtbjbt5bfy",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeib42kqyqzvouebedqf4ugzu3afydhstkcafcm2rnylrogourfxjjq",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Book 7"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 50"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1994"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Portrait"
+    }
+  ]
+}

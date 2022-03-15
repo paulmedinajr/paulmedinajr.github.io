@@ -1,0 +1,47 @@
+{
+  "name": "Book 4 Merges with Book 5",
+  "description": "As I became a self-publisher of my books, Anvil wanted to come out with Pugad Baboy books in packages. I made this cover for Books 4 and 5 combined. The project didn't push through so this artwork has not been seen anywhere yet.",
+  "image": "https://ipfs.io/ipfs/bafkreiev6eqpznlih4xff2qr2mvwmuejvobrdyinqh4tsovvoswlk7isfm",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeihf27qzofoeng44444f2yjjxh4ncu7234nlqoxk4enthruvmr6sbe",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Books 4-5"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 50"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Uncommon"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1998"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Square"
+    }
+  ]
+}

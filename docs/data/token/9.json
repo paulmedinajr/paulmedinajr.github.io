@@ -1,0 +1,47 @@
+{
+  "name": "The Gang Makes Waves",
+  "description": "This is the first comic book I self-published after being tutored by Anvil. I was inspired to come up with a book cover that goes front-to-back. I planned to make the covers of both Books 9 and 10 to have the group out of their element.",
+  "image": "https://ipfs.io/ipfs/bafkreidikizlnzx2e2q4j6lg3pmgsiiezeubsi5bu67yeftxuh5dbm6fo4",
+  "hires_uri": "https://ipfs.io/ipfs/bafybeibbvr4gasdggex6y3tfnblgg6e7hc6343yzlclm6nvjytx7e7qbtq",
+  "external_uri": "https://www.polmedinajr.com",
+  "partner": "Ark of Dreams",
+  "partner_uri": "https://www.arkofdreams.io",
+  "attributes": [
+    {
+      "trait_type": "Artist",
+      "value": "Pol Medina Jr."
+    },
+    {
+      "trait_type": "Series",
+      "value": "Pugad Baboy: Book 9"
+    },
+    {
+      "trait_type": "Supply",
+      "value": "1 of 10"
+    },
+    {
+      "trait_type": "Rarity",
+      "value": "Epic"
+    },
+    {
+      "trait_type": "Art Type",
+      "value": "Comic Book Series"
+    },
+    {
+      "trait_type": "Art Medium",
+      "value": "Watercolor on Strathmore Board"
+    },
+    {
+      "trait_type": "Year Created",
+      "value": "1995"
+    },
+    {
+      "trait_type": "Art Color",
+      "value": "Colored"
+    },
+    {
+      "trait_type": "Art Orientation",
+      "value": "Landscape"
+    }
+  ]
+}
