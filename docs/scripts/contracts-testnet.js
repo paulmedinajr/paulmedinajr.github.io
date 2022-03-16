@@ -1,6 +1,7 @@
 window.blockmetadata = {
   "chain_id": 4,
   "chain_name": "Ethereum Rinkeby Testnet",
+  "chain_marketplace": "https://testnets.opensea.io/assets",
   "chain_scan": "https://rinkeby.etherscan.io",
   "contracts": {
     "legacy": {

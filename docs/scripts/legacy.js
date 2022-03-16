@@ -48,7 +48,11 @@
         .replace('{ID}', i + 1)
         .replace('{TITLE}', metadata.name)
         .replace('{PRICE}', token.price)
+        .replace('{REMAINING}', token.remaining)
 
+      if (!token.remaining) {
+        item.querySelector('a').innerHTML = 'Buy Now on OpenSea'
+      } 
       collections.appendChild(item)
       window.doon(item)
     }
@@ -75,13 +79,22 @@
   //on buy
   window.addEventListener('buy-click', async (e) => {
     async function buy() {
+      const id = e.for.getAttribute('data-id')
+      const remaining = parseInt(e.for.getAttribute('data-remaining'))
+      
+      if (!isNaN(remaining) && !remaining) {
+        const marketplace = blockmetadata.chain_marketplace
+        const contractAddress = blockmetadata.contracts.legacy.address
+        window.open(`${marketplace}/${contractAddress}/${id}`)
+        return
+      }
+
       if (!whitelist[state.account.toLowerCase()]) {
         console.log(state.account.toLowerCase(), whitelist)
         return blockapi.notify('error', 'Wallet is not whitelisted')
       }
 
       const proof = whitelist[state.account.toLowerCase()]
-      const id = e.for.getAttribute('data-id')
       const price = e.for.getAttribute('data-price')
       const title = e.for.getAttribute('data-title')
 
@@ -159,6 +172,4 @@
   //load whitelist
   const response = await fetch(`/data/whitelist.json`)
   const whitelist = await response.json()
-  
-  
 })()

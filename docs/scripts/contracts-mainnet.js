@@ -1,6 +1,7 @@
 window.blockmetadata = {
   "chain_id": 1,
   "chain_name": "Ethereum Mainnet",
+  "chain_marketplace": "https://opensea.io/assets",
   "chain_scan": "https://etherscan.io",
   "contracts": {
     "legacy": {
