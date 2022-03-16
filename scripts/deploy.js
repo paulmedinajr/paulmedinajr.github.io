@@ -14,7 +14,7 @@ const contractURI = 'https://ipfs.io/ipfs/bafkreiel7ifk22wpw42lrpghar3h7nxqabych
 const tokenURI = 'https://www.polmedinajr.com/data/token'
 const recipients = [
   '0xc742466fd430c852aaA5bbC936933A080B2ad4aB', //pol
-  '0x74EeeB8c5E56F6BEc6FFe989E5EcBD0Cac872aaC' //aod
+  '0x594A0C367cDdCE0a0AC5031834780A72eDEfa0f7' //aod
 ];
 const shares = [50, 50];
 
