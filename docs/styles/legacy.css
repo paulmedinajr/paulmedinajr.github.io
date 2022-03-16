@@ -17,7 +17,10 @@ h1 {
 }
 
 .body .proof {
-  margin: 20px 0 40px;
+  border-bottom: 1px solid #000000;
+  border-top: 1px solid #000000;
+  margin-bottom: 20px;
+  padding: 20px 0;
   text-align: center;
 }
 
@@ -40,6 +43,30 @@ h1 {
   display: block;
 }
 
+.body .benefits p {
+  padding: 0;
+}
+
+.body .benefits ul {
+  list-style-type: "🔹    ";
+  padding-left: 25px;
+}
+
+.body .how-works {
+  border-top: 1px solid #000000;
+}
+
+.body .how-works ol {
+  list-style-type: "✅    ";
+  padding-left: 25px;
+}
+
+.body .note {
+  color: #880000;
+  padding-top: 5px;
+  text-align: center;
+}
+
 #disconnected .btn-primary {
   display: block;
   text-align: center;
@@ -56,6 +83,8 @@ h1 {
 }
 
 .collection {
+  border-top: 1px solid #000000;
+  padding-top: 20px;
   margin-bottom: 20px;
 }
 

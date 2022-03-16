@@ -1,4 +1,4 @@
-(() => {
+(async () => {
   const form = document.getElementById('google-form')
   const frame = document.getElementById('google-frame')
   const success = document.getElementById('success')
@@ -11,13 +11,26 @@
   const submitable = function() {
     const hasSocial = twitter.value.length || discord.value.length
     if (!submitted && wallet.value.length && hasSocial) {
-      button.disabled = false
+      if (whitelist[wallet.value.toLowerCase()]) {
+        button.disabled = true
+        blockapi.notify('error', 'Wallet is already whitelisted')
+      } else {
+        button.disabled = false
+      }
     } else {
       button.disabled = true
     }
   }
 
-  wallet.addEventListener('keyup', () => setTimeout(submitable, 0))
+  wallet.addEventListener('keyup', () => setTimeout(() => {
+    //check whitelist
+    button.disabled = true
+    if (whitelist[wallet.value.toLowerCase()]) {
+      blockapi.notify('error', 'Wallet is already whitelisted')
+    } else {
+      submitable()
+    }
+  }, 0))
   twitter.addEventListener('keyup', () => setTimeout(submitable, 0))
   discord.addEventListener('keyup', () => setTimeout(submitable, 0))
   
@@ -34,4 +47,8 @@
       success.style.display = 'block'
     }
   })
+
+  //load whitelist
+  const response = await fetch(`/data/whitelist.json`)
+  const whitelist = await response.json()
 })()

@@ -17,18 +17,25 @@
     ].join('...')
 
     //load collection
-    collections.innerHTML = '';
-    for (let token, i = 0; i < 4; i++) {
+    for (let token, i = 0; true; i++) {
+      //dont add if added
+      if (document.getElementById(`item-${i + 1}`)) {
+        continue
+      }
+
       token = null
       try {
         token = await blockapi.read(contract, 'tokenInfo', i + 1)
-      } catch(e) {}
+      } catch(e) {
+        break
+      }
       
-      if (!token?.price) break;
+      if (!token?.price) break
       const response = await fetch(`/data/token/${i + 1}.json`)
       const metadata = await response.json()
 
       const item = document.createElement('div')
+      item.setAttribute('id', `item-${i + 1}`)
       item.classList.add('collection')
       item.innerHTML = template.innerHTML
         .replace('{ID}', i + 1)

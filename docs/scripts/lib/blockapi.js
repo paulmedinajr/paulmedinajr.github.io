@@ -132,7 +132,7 @@ window.blockapi = {
     })
     const container = document.createElement('div')
     container.className = `notification notification-${type}`
-    container.innerHTML = message
+    container.innerHTML = `<div>${message}</div>`
     container.mounted = true
     document.body.appendChild(container)
     container.addEventListener('click', () => {

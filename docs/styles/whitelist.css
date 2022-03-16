@@ -1,9 +1,13 @@
+.head {
+  max-width: 600px;
+}
+
 label {
   display: block;
 }
 
 h1 {
-  margin-top: 0;
+  margin: 0;
 }
 
 .container {
@@ -12,7 +16,7 @@ h1 {
 }
 
 .body {
-  padding: 60px 20px;
+  padding: 20px;
 }
 
 .body form .form-row {
