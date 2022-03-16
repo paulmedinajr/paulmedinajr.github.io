@@ -52,7 +52,28 @@
 
       if (!token.remaining) {
         item.querySelector('a').innerHTML = 'Buy Now on OpenSea'
-      } 
+      }
+
+      //check ownership
+      try {
+        const balance = await blockapi.read(
+          contract, 
+          'balanceOf', 
+          newstate.account, 
+          i + 1
+        )
+
+        if (balance > 0) {
+          const hires = document.createElement('a')
+          hires.setAttribute('href', metadata.hires_uri)
+          hires.setAttribute('target', '_blank')
+          hires.classList.add('owned')
+          hires.innerHTML = 'You Own'
+          const title = item.querySelector('h3')
+          title.parentNode.insertBefore(hires, title)
+        }
+      } catch(e) {}
+
       collections.appendChild(item)
       window.doon(item)
     }
