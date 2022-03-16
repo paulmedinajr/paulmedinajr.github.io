@@ -172,7 +172,6 @@ li {
 .foot {
   margin: auto;
   max-width: 1000px;
-  padding-top: 40px;
 }
 
 .notification {
@@ -262,6 +261,25 @@ li {
 .btn-outline.btn-danger:hover {
   border-color: #EC131D;
   color: #EC131D;
+}
+
+.aod {
+  background-color: #222222;
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.aod div {
+  position: relative;
+}
+
+.aod h6 {
+  color: #CCCCCC;
+  left: 67px;
+  margin: 0;
+  position: absolute;
+  top: -1px;
 }
 
 @media(max-width: 520px) {
