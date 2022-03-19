@@ -5,7 +5,7 @@ window.blockmetadata = {
   "chain_scan": "https://etherscan.io",
   "contracts": {
     "legacy": {
-      "address": "",
+      "address": "0xCcA4B9361427feE05b85B948F885F6a61Ef881E3",
       "abi": [
         {
           "inputs": [
