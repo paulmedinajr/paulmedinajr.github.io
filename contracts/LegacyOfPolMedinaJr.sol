@@ -16,6 +16,7 @@ import "@openzeppelin/contracts/token/ERC1155/extensions/ERC1155Supply.sol";
 import "@openzeppelin/contracts/finance/PaymentSplitter.sol";
 
 error InvalidMint();
+error InvalidApproval();
 error NoMaxSupply();
 
 contract LegacyOfPolMedinaJr is 
@@ -50,6 +51,17 @@ contract LegacyOfPolMedinaJr is
   mapping(uint256 => Token) private _tokens;
   //the contract metadata
   string private _contractURI;
+  //a flag that allows NFTs to be listed on marketplaces
+  //this helps to prevent people from listing at a lower
+  //price during the whitelist
+  bool approvable = false;
+
+  // ============ Modifier ============
+
+  modifier canApprove {
+    if (!approvable) revert InvalidApproval();
+    _;
+  }
 
   // ============ Deploy ============
 
@@ -205,13 +217,27 @@ contract LegacyOfPolMedinaJr is
     _mintSupply(to, id, quantity);
   }
 
+  /**
+   * @dev Check if can approve before approving
+   */
+  function setApprovalForAll(address operator, bool approved) 
+    public virtual override canApprove
+  {
+    super.setApprovalForAll(operator, approved);
+  }
+
   // ============ Admin Methods ============
 
   /**
    * @dev Adds a token that can be minted
    */
-  function addToken(uint256 id, uint256 max, uint256 price) public onlyOwner {
+  function addToken(uint256 id, uint256 max, uint256 price, uint8 prizes) 
+    public onlyOwner 
+  {
     _tokens[id] = Token(max, price, true);
+    if (prizes > 0) {
+      _mintSupply(_msgSender(), id, prizes);
+    }
   }
 
   /**
@@ -229,11 +255,18 @@ contract LegacyOfPolMedinaJr is
   }
 
   /**
-   * @dev Sends the entire contract balance to a `recipient`
+   * @dev Sends the entire contract balance to a `recipient`. 
+   * This also enables NFTs to be listable on marketplaces.
    */
   function withdraw(address recipient) 
     external virtual nonReentrant onlyOwner
   {
+    //now make approvable, it's only here we will 
+    //set this so it's kind of immutable (a one time deal)
+    if (!approvable) {
+      approvable = true;
+    }
+
     Address.sendValue(payable(recipient), address(this).balance);
   }
 

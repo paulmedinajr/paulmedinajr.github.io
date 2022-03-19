@@ -30,6 +30,16 @@ async function getSigners(name, ...params) {
   return signers
 }
 
+function authorizeToken(recipient) {
+  return Buffer.from(
+    ethers.utils.solidityKeccak256(
+      ['string', 'address'],
+      ['authorized', recipient]
+    ).slice(2),
+    'hex'
+  )
+}
+
 describe('LegacyOfPolMedinaJr Tests', function () {
   before(async function() {
 
@@ -64,40 +74,40 @@ describe('LegacyOfPolMedinaJr Tests', function () {
 
   it('Should add tokens', async function () {
     const { owner } = this.signers
-    await owner.withContract.addToken(1, 20, ethers.utils.parseEther('0.06'))
-    await owner.withContract.addToken(2, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(3, 70, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(4, 40, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(5, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(6, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(7, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(8, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(9, 10, ethers.utils.parseEther('0.15'))
-    await owner.withContract.addToken(10, 60, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(11, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(12, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(13, 70, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(14, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(15, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(16, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(17, 20, ethers.utils.parseEther('0.06'))
-    await owner.withContract.addToken(18, 70, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(19, 70, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(20, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(21, 50, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(22, 70, ethers.utils.parseEther('0.05'))
-    await owner.withContract.addToken(23, 1, ethers.utils.parseEther('0.3'))
-    await owner.withContract.addToken(24, 1, ethers.utils.parseEther('0.3'))
-    await owner.withContract.addToken(25, 1, ethers.utils.parseEther('0.3'))
-    await owner.withContract.addToken(26, 1, ethers.utils.parseEther('0.3'))
-    await owner.withContract.addToken(27, 1, ethers.utils.parseEther('0.3'))
-    await owner.withContract.addToken(28, 1, ethers.utils.parseEther('0.6'))
-    await owner.withContract.addToken(29, 1, ethers.utils.parseEther('1'))
-    await owner.withContract.addToken(30, 1, ethers.utils.parseEther('1.2'))
-    await owner.withContract.addToken(31, 1, ethers.utils.parseEther('1.2'))
-    await owner.withContract.addToken(32, 1, 0)
-    await owner.withContract.addToken(33, 1, 0)
-    await owner.withContract.addToken(34, 0, 0)
+    await owner.withContract.addToken(1, 20, ethers.utils.parseEther('0.06'), 2)
+    await owner.withContract.addToken(2, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(3, 70, ethers.utils.parseEther('0.05'), 7)
+    await owner.withContract.addToken(4, 40, ethers.utils.parseEther('0.05'), 4)
+    await owner.withContract.addToken(5, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(6, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(7, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(8, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(9, 10, ethers.utils.parseEther('0.15'), 1)
+    await owner.withContract.addToken(10, 60, ethers.utils.parseEther('0.05'), 6)
+    await owner.withContract.addToken(11, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(12, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(13, 70, ethers.utils.parseEther('0.05'), 7)
+    await owner.withContract.addToken(14, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(15, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(16, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(17, 20, ethers.utils.parseEther('0.06'), 2)
+    await owner.withContract.addToken(18, 70, ethers.utils.parseEther('0.05'), 7)
+    await owner.withContract.addToken(19, 70, ethers.utils.parseEther('0.05'), 7)
+    await owner.withContract.addToken(20, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(21, 50, ethers.utils.parseEther('0.05'), 5)
+    await owner.withContract.addToken(22, 70, ethers.utils.parseEther('0.05'), 7)
+    await owner.withContract.addToken(23, 1, ethers.utils.parseEther('0.3'), 0)
+    await owner.withContract.addToken(24, 1, ethers.utils.parseEther('0.3'), 0)
+    await owner.withContract.addToken(25, 1, ethers.utils.parseEther('0.3'), 0)
+    await owner.withContract.addToken(26, 1, ethers.utils.parseEther('0.3'), 0)
+    await owner.withContract.addToken(27, 1, ethers.utils.parseEther('0.3'), 0)
+    await owner.withContract.addToken(28, 1, ethers.utils.parseEther('0.6'), 0)
+    await owner.withContract.addToken(29, 1, ethers.utils.parseEther('1'), 0)
+    await owner.withContract.addToken(30, 1, ethers.utils.parseEther('1.2'), 0)
+    await owner.withContract.addToken(31, 1, ethers.utils.parseEther('1.2'), 0)
+    await owner.withContract.addToken(32, 1, 0, 0)
+    await owner.withContract.addToken(33, 1, 0, 0)
+    await owner.withContract.addToken(34, 0, 0, 0)
 
     expect(await owner.withContract.maxSupply(1)).to.equal(20)
     expect(await owner.withContract.maxSupply(2)).to.equal(50)
@@ -168,6 +178,40 @@ describe('LegacyOfPolMedinaJr Tests', function () {
     expect(await owner.withContract.mintPrice(32)).to.equal(0)
     expect(await owner.withContract.mintPrice(33)).to.equal(0)
     expect(await owner.withContract.mintPrice(34)).to.equal(0)
+
+    expect(await owner.withContract.remainingSupply(1)).to.equal(18)
+    expect(await owner.withContract.remainingSupply(2)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(3)).to.equal(63)
+    expect(await owner.withContract.remainingSupply(4)).to.equal(36)
+    expect(await owner.withContract.remainingSupply(5)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(6)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(7)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(8)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(9)).to.equal(9)
+    expect(await owner.withContract.remainingSupply(10)).to.equal(54)
+    expect(await owner.withContract.remainingSupply(11)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(12)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(13)).to.equal(63)
+    expect(await owner.withContract.remainingSupply(14)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(15)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(16)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(17)).to.equal(18)
+    expect(await owner.withContract.remainingSupply(18)).to.equal(63)
+    expect(await owner.withContract.remainingSupply(19)).to.equal(63)
+    expect(await owner.withContract.remainingSupply(20)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(21)).to.equal(45)
+    expect(await owner.withContract.remainingSupply(22)).to.equal(63)
+    expect(await owner.withContract.remainingSupply(23)).to.equal(1)
+    expect(await owner.withContract.remainingSupply(24)).to.equal(1)
+    expect(await owner.withContract.remainingSupply(25)).to.equal(1)
+    expect(await owner.withContract.remainingSupply(26)).to.equal(1)
+    expect(await owner.withContract.remainingSupply(27)).to.equal(1)
+    expect(await owner.withContract.remainingSupply(28)).to.equal(1)
+    expect(await owner.withContract.remainingSupply(29)).to.equal(1)
+    expect(await owner.withContract.remainingSupply(30)).to.equal(1)
+    expect(await owner.withContract.remainingSupply(31)).to.equal(1)
+    expect(await owner.withContract.remainingSupply(32)).to.equal(1)
+    expect(await owner.withContract.remainingSupply(33)).to.equal(1)
   })
 
   it('Should mint', async function () {
@@ -175,48 +219,60 @@ describe('LegacyOfPolMedinaJr Tests', function () {
 
     await owner.withContract.mint(holder1.address, 1, 2)
     expect(await owner.withContract.balanceOf(holder1.address, 1)).to.equal(2)
-    expect(await owner.withContract.remainingSupply(1)).to.equal(18)
+    expect(await owner.withContract.remainingSupply(1)).to.equal(16)
+
+    await owner.withContract.mint(holder1.address, 33, 1)
+    expect(await owner.withContract.balanceOf(holder1.address, 33)).to.equal(1)
+
+    await owner.withContract.mint(holder1.address, 34, 2)
+    expect(await owner.withContract.balanceOf(holder1.address, 34)).to.equal(2)
+    await owner.withContract.mint(holder1.address, 34, 2)
+    expect(await owner.withContract.balanceOf(holder1.address, 34)).to.equal(4)
   })
 
   it('Should not mint', async function () {
-    const { owner, holder1 } = this.signers
+    const { owner, holder1, holder2 } = this.signers
 
     await expect(owner.withContract.mint(holder1.address, 35, 2)).to.revertedWith('InvalidMint()')
+    await expect(owner.withContract.mint(holder1.address, 33, 1)).to.revertedWith('InvalidMint()')
+    await expect(owner.withContract.mint(holder2.address, 33, 1)).to.revertedWith('InvalidMint()')
   })
 
   it('Should buy', async function () {
     const { owner, holder2 } = this.signers
-    await owner.withContract.buy(holder2.address, 2, 3, { value: ethers.utils.parseEther('0.15') })
+
+    const message = authorizeToken(holder2.address)
+    const signature = await owner.signMessage(message)
+
+    await owner.withContract.buy(holder2.address, 2, 3, signature, { 
+      value: ethers.utils.parseEther('0.15') 
+    })
     expect(await owner.withContract.balanceOf(holder2.address, 2)).to.equal(3)
   })
 
   it('Should not buy', async function () {
     const { owner, holder2 } = this.signers
 
-    //wrong amount
-    await expect(
-      owner.withContract.buy(holder2.address, 3, 4, { 
-        value: ethers.utils.parseEther('0.04') 
-      })
-    ).to.revertedWith('InvalidMint()')
+    const message = authorizeToken(holder2.address)
+    const signature = await owner.signMessage(message)
 
     //wrong amount
     await expect(
-      owner.withContract.buy(holder2.address, 3, 4, { 
-        value: ethers.utils.parseEther('0.05') 
+      owner.withContract.buy(holder2.address, 3, 4, signature, { 
+        value: ethers.utils.parseEther('0.04') 
       })
     ).to.revertedWith('InvalidMint()')
 
     //passed max
     await expect(
-      owner.withContract.buy(holder2.address, 3, 71, { 
+      owner.withContract.buy(holder2.address, 3, 71, signature, { 
         value: ethers.utils.parseEther('10') 
       })
     ).to.revertedWith('InvalidMint()')
 
     //no id
     await expect(
-      owner.withContract.buy(holder2.address, 35, 4, { 
+      owner.withContract.buy(holder2.address, 35, 4, signature, { 
         value: ethers.utils.parseEther('0.04') 
       })
     ).to.revertedWith('InvalidMint()')

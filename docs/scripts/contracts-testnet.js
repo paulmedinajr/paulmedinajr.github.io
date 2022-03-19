@@ -35,6 +35,11 @@ window.blockmetadata = {
         },
         {
           "inputs": [],
+          "name": "InvalidApproval",
+          "type": "error"
+        },
+        {
+          "inputs": [],
           "name": "InvalidMint",
           "type": "error"
         },
@@ -248,6 +253,11 @@ window.blockmetadata = {
               "internalType": "uint256",
               "name": "price",
               "type": "uint256"
+            },
+            {
+              "internalType": "uint8",
+              "name": "prizes",
+              "type": "uint8"
             }
           ],
           "name": "addToken",
