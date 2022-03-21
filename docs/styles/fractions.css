@@ -1,0 +1,51 @@
+.head {
+  max-width: 600px;
+}
+
+.body h1 {
+  margin: 0;
+  padding: 40px 0;
+}
+
+.body h2, 
+.body h3, 
+.body h4, 
+.body h5, 
+.body h6 {
+  margin: 0;
+  padding: 0 0 20px;
+}
+
+.body p {
+  font-size: 15px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0 0 20px;
+}
+
+.body ul {
+  list-style-type: "🔹    ";
+  padding: 0 0 20px 25px;
+}
+
+.body ol {
+  list-style-type: "✅    ";
+  padding: 0 0 20px 25px;
+}
+
+.body blockquote {
+  font-size: 18px;
+  line-height: 34px;
+  margin: 0 0 20px;
+}
+
+.body img {
+  padding-bottom: 20px;
+  width: 100%;
+}
+
+.container {
+  line-height: 24px;
+  margin: auto;
+  max-width: 600px;
+}
