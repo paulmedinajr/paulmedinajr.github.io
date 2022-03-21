@@ -93,6 +93,11 @@
   padding: 20px 40px;
 }
 
+.body .section-3 p a {
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
 .body .section-4 {
   margin: auto;
   max-width: 900px;
@@ -127,4 +132,59 @@
   .body .section-3 .preview {
     justify-content: flex-start;
   }
+}
+
+
+.body .section-35 {
+  background-color: #999999;
+  border-bottom-width: 6px;
+  border-color: #000000;
+  border-style: solid;
+  border-top-width: 6px;
+  color: #EFEFEF;
+  display: none;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.body .section-35 .left h2 {
+  font-size: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.body .section-35 .left p {
+  margin: 0 auto;
+  max-width: 640px;
+  padding: 0 20px;
+}
+
+.body .section-35 .right .scroll-container {
+  height: 100vh;
+}
+
+.body .section-35 .right .speak {
+  margin: 450vh 0;
+}
+
+.body .section-35 .right .speak[data-scroll] {
+  transform: translatey(calc(var(--viewport-y) * 30vh));
+  opacity: calc(var(--visible-y));
+}
+
+.body .section-35 .right .scroll-sequence__content {
+  padding: 4em;
+}
+
+.body .section-35 .right .scroll-sequence {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -5;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
